@@ -11,6 +11,9 @@ def digit_sum(n):
   else:
     return n
 
-if __name__ =="__main__":
+def run():
   a = int(input("Enter an int: "))
   print(f"sum of digits of {a} is {digit_sum(a)}.")    
+
+if __name__ == "__main__":
+  run()

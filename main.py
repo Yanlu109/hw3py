@@ -5,12 +5,12 @@
 # Section: 4
 # Breakout: 11
 
-def dig_sum(n):
+def digit_sum(n):
   if n>10 :
-    return int(n%10 + dig_sum(n/10))
+    return int(n%10 + digit_sum(n/10))
   else:
     return n
 
 if __name__ =="__main__":
   a = int(input("Enter an int: "))
-  print(f"sum of digits of {a} is {dig_sum(a)}.")    
+  print(f"sum of digits of {a} is {digit_sum(a)}.")    
